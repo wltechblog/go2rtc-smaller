@@ -4,12 +4,10 @@ import (
 	"github.com/AlexxIT/go2rtc/internal/api"
 	"github.com/AlexxIT/go2rtc/internal/api/ws"
 	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/debug"
 	"github.com/AlexxIT/go2rtc/internal/exec"
 	"github.com/AlexxIT/go2rtc/internal/hls"
 	"github.com/AlexxIT/go2rtc/internal/mjpeg"
 	"github.com/AlexxIT/go2rtc/internal/mp4"
-	"github.com/AlexxIT/go2rtc/internal/ngrok"
 	"github.com/AlexxIT/go2rtc/internal/rtsp"
 	"github.com/AlexxIT/go2rtc/internal/streams"
 	"github.com/AlexxIT/go2rtc/internal/webrtc"
@@ -63,9 +61,9 @@ func main() {
 
 	// 6. Helper modules
 
-	ngrok.Init() // ngrok module
+//	ngrok.Init() // ngrok module
 //	srtp.Init()  // SRTP server
-	debug.Init() // debug API
+//	debug.Init() // debug API
 
 	// 7. Go
 
