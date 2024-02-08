@@ -9,13 +9,13 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/rs/zerolog"
 	"github.com/wltechblog/go2rtc-smaller/internal/api"
 	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
 	"github.com/wltechblog/go2rtc-smaller/internal/streams"
 	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 	"github.com/wltechblog/go2rtc-smaller/pkg/onvif"
-	"github.com/rs/zerolog"
 )
 
 func Init() {
@@ -26,8 +26,6 @@ func Init() {
 	// ONVIF server on all suburls
 	api.HandleFunc("/onvif/", onvifDeviceService)
 
-	// ONVIF client autodiscovery
-	api.HandleFunc("api/onvif", apiOnvif)
 }
 
 var log zerolog.Logger

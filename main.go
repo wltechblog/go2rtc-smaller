@@ -8,6 +8,7 @@ import (
 	"github.com/wltechblog/go2rtc-smaller/internal/hls"
 	"github.com/wltechblog/go2rtc-smaller/internal/mjpeg"
 	"github.com/wltechblog/go2rtc-smaller/internal/mp4"
+	"github.com/wltechblog/go2rtc-smaller/internal/onvif"
 	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
 	"github.com/wltechblog/go2rtc-smaller/internal/streams"
 	"github.com/wltechblog/go2rtc-smaller/internal/webrtc"
@@ -38,7 +39,7 @@ func main() {
 	// 4. Other sources and servers
 
 //	hass.Init()       // hass source, Hass API server
-//	onvif.Init()      // onvif source, ONVIF API server
+	onvif.Init()      // onvif source, ONVIF API server
 //	webtorrent.Init() // webtorrent source, WebTorrent module
 
 	// 5. Other sources
