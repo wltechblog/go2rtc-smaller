@@ -3,7 +3,7 @@ package h265
 import (
 	"encoding/base64"
 	"encoding/binary"
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 )
 
 const (

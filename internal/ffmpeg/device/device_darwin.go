@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/AlexxIT/go2rtc/internal/api"
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 )
 
 func queryToInput(query url.Values) string {

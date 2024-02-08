@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"github.com/AlexxIT/go2rtc/pkg/mqtt"
+	"github.com/wltechblog/go2rtc-smaller/pkg/mqtt"
 	"github.com/rs/zerolog/log"
 	"net"
 	"net/rpc"

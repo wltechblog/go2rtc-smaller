@@ -9,12 +9,12 @@ import (
 	"path"
 	"sync"
 
-	"github.com/AlexxIT/go2rtc/internal/api"
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/roborock"
-	"github.com/AlexxIT/go2rtc/internal/streams"
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/hass"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/roborock"
+	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/hass"
 	"github.com/rs/zerolog"
 )
 

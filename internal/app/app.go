@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/AlexxIT/go2rtc/pkg/shell"
-	"github.com/AlexxIT/go2rtc/pkg/yaml"
+	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
+	"github.com/wltechblog/go2rtc-smaller/pkg/yaml"
 	"github.com/rs/zerolog/log"
 )
 

@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"unicode/utf8"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 	"github.com/pion/rtp"
 	"github.com/sigurn/crc16"
 	"github.com/sigurn/crc8"

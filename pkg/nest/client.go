@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/webrtc"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/webrtc"
 	pion "github.com/pion/webrtc/v3"
 )
 

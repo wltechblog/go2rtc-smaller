@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 	"github.com/stretchr/testify/require"
 )
 

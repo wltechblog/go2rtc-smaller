@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/rtsp"
-	"github.com/AlexxIT/go2rtc/internal/streams"
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/magic"
-	pkg "github.com/AlexxIT/go2rtc/pkg/rtsp"
-	"github.com/AlexxIT/go2rtc/pkg/shell"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
+	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/magic"
+	pkg "github.com/wltechblog/go2rtc-smaller/pkg/rtsp"
+	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
 	"github.com/rs/zerolog"
 )
 

@@ -21,12 +21,12 @@ go list -deps .\cmd\go2rtc_rtsp\
 ```
 - gopkg.in/yaml.v3
   - github.com/kr/pretty
-- github.com/AlexxIT/go2rtc/pkg/hap
+- github.com/wltechblog/go2rtc-smaller/pkg/hap
   - github.com/tadglines/go-pkgs
   - golang.org/x/crypto
-- github.com/AlexxIT/go2rtc/pkg/mdns
+- github.com/wltechblog/go2rtc-smaller/pkg/mdns
   - github.com/miekg/dns
-- github.com/AlexxIT/go2rtc/pkg/pcm
+- github.com/wltechblog/go2rtc-smaller/pkg/pcm
   - github.com/sigurn/crc16
   - github.com/sigurn/crc8
 - github.com/pion/ice/v2

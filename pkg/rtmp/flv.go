@@ -1,8 +1,8 @@
 package rtmp
 
 import (
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/flv"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/flv"
 )
 
 func (c *Conn) Producer() (core.Producer, error) {

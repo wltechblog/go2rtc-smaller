@@ -3,7 +3,7 @@ package h265
 import (
 	"bytes"
 
-	"github.com/AlexxIT/go2rtc/pkg/bits"
+	"github.com/wltechblog/go2rtc-smaller/pkg/bits"
 )
 
 // http://www.itu.int/rec/T-REC-H.265

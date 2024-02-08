@@ -424,7 +424,7 @@ paths:
   /api/ffmpeg/hardware:
     get:
       summary: FFmpeg hardware transcoding discovery
-      description: "[Hardware acceleration](https://github.com/AlexxIT/go2rtc/wiki/Hardware-acceleration)"
+      description: "[Hardware acceleration](https://github.com/wltechblog/go2rtc-smaller/wiki/Hardware-acceleration)"
       tags: [ Discovery ]
       responses:
             default:

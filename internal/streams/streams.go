@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AlexxIT/go2rtc/internal/api"
-	"github.com/AlexxIT/go2rtc/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/rs/zerolog"
 )
 

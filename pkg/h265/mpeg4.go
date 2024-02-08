@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 	"encoding/binary"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 )
 
 func DecodeConfig(conf []byte) (profile, vps, sps, pps []byte) {

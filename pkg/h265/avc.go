@@ -1,6 +1,6 @@
 package h265
 
-import "github.com/AlexxIT/go2rtc/pkg/h264"
+import "github.com/wltechblog/go2rtc-smaller/pkg/h264"
 
 const forbiddenZeroBit = 0x80
 const nalUnitType = 0x3F

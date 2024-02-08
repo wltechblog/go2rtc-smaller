@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/AlexxIT/go2rtc/pkg/hap"
+	"github.com/wltechblog/go2rtc-smaller/pkg/hap"
 )
 
 var servs = map[string]string{

@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/roborock/iot"
-	"github.com/AlexxIT/go2rtc/pkg/webrtc"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/roborock/iot"
+	"github.com/wltechblog/go2rtc-smaller/pkg/webrtc"
 	pion "github.com/pion/webrtc/v3"
 )
 

@@ -3,7 +3,7 @@ package hardware
 import (
 	"runtime"
 
-	"github.com/AlexxIT/go2rtc/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
 )
 
 const (

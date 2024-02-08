@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/rtsp"
-	"github.com/AlexxIT/go2rtc/internal/streams"
-	"github.com/AlexxIT/go2rtc/pkg/shell"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
+	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
 )
 
 func main() {

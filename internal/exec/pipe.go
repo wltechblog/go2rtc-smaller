@@ -5,7 +5,7 @@ import (
 	"io"
 	"os/exec"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 )
 
 // PipeCloser - return StdoutPipe that Kill cmd on Close call

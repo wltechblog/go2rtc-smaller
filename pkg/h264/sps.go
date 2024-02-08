@@ -1,6 +1,6 @@
 package h264
 
-import "github.com/AlexxIT/go2rtc/pkg/bits"
+import "github.com/wltechblog/go2rtc-smaller/pkg/bits"
 
 // http://www.itu.int/rec/T-REC-H.264
 // https://webrtc.googlesource.com/src/+/refs/heads/main/common_video/h264/sps_parser.cc

@@ -6,8 +6,8 @@ import (
 	"encoding/base64"
 	"encoding/binary"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/h264"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/h264"
 	"github.com/pion/rtp"
 )
 

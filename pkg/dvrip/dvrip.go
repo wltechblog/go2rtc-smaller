@@ -1,6 +1,6 @@
 package dvrip
 
-import "github.com/AlexxIT/go2rtc/pkg/core"
+import "github.com/wltechblog/go2rtc-smaller/pkg/core"
 
 func Dial(url string) (core.Producer, error) {
 	client := &Client{}

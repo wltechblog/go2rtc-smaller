@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AlexxIT/go2rtc/internal/api"
-	"github.com/AlexxIT/go2rtc/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/gorilla/websocket"
 	"github.com/rs/zerolog/log"
 )
@@ -80,7 +80,7 @@ func initWS(origin string) {
 				return true
 			}
 			log.Trace().Msgf("[api.ws] origin=%s, host=%s", o.Host, r.Host)
-			// https://github.com/AlexxIT/go2rtc/issues/118
+			// https://github.com/wltechblog/go2rtc-smaller/issues/118
 			if i := strings.IndexByte(o.Host, ':'); i > 0 {
 				return o.Host[:i] == r.Host
 			}

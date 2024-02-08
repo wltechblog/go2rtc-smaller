@@ -27,7 +27,7 @@ func TestParseArgsFile(t *testing.T) {
 	args = parseArgs("/media/bbb.mp4#video=mjpeg")
 	require.Equal(t, `ffmpeg -hide_banner -re -i /media/bbb.mp4 -c:v mjpeg -an -f mjpeg -`, args.String())
 
-	// https://github.com/AlexxIT/go2rtc/issues/509
+	// https://github.com/wltechblog/go2rtc-smaller/issues/509
 	args = parseArgs("ffmpeg:test.mp4#raw=-ss 00:00:20")
 	require.Equal(t, `ffmpeg -hide_banner -re -i ffmpeg:test.mp4 -ss 00:00:20 -c copy -user_agent ffmpeg/go2rtc -rtsp_transport tcp -f rtsp {output}`, args.String())
 }

@@ -3,9 +3,9 @@ package mp4
 import (
 	"io"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/h264"
-	"github.com/AlexxIT/go2rtc/pkg/h265"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/h264"
+	"github.com/wltechblog/go2rtc-smaller/pkg/h265"
 	"github.com/pion/rtp"
 )
 

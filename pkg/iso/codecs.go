@@ -1,8 +1,8 @@
 package iso
 
 import (
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/pcm"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/pcm"
 )
 
 func (m *Movie) WriteVideo(codec string, width, height uint16, conf []byte) {

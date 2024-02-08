@@ -12,8 +12,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/pkg/shell"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
 	"github.com/rs/zerolog"
 )
 

@@ -73,7 +73,7 @@ func (t *Receiver) Replace(target *Receiver) {
 	// move this receiver senders to new receiver
 	t.mu.Lock()
 	senders := t.senders
-	// fix https://github.com/AlexxIT/go2rtc/issues/828
+	// fix https://github.com/wltechblog/go2rtc-smaller/issues/828
 	// TODO: fix the reason, not the consequence
 	t.senders = nil
 	t.mu.Unlock()

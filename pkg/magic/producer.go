@@ -6,14 +6,14 @@ import (
 	"errors"
 	"io"
 
-	"github.com/AlexxIT/go2rtc/pkg/aac"
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/flv"
-	"github.com/AlexxIT/go2rtc/pkg/h264/annexb"
-	"github.com/AlexxIT/go2rtc/pkg/magic/bitstream"
-	"github.com/AlexxIT/go2rtc/pkg/magic/mjpeg"
-	"github.com/AlexxIT/go2rtc/pkg/mpegts"
-	"github.com/AlexxIT/go2rtc/pkg/multipart"
+	"github.com/wltechblog/go2rtc-smaller/pkg/aac"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/flv"
+	"github.com/wltechblog/go2rtc-smaller/pkg/h264/annexb"
+	"github.com/wltechblog/go2rtc-smaller/pkg/magic/bitstream"
+	"github.com/wltechblog/go2rtc-smaller/pkg/magic/mjpeg"
+	"github.com/wltechblog/go2rtc-smaller/pkg/mpegts"
+	"github.com/wltechblog/go2rtc-smaller/pkg/multipart"
 )
 
 func Open(r io.Reader) (core.Producer, error) {
@@ -45,7 +45,7 @@ func Open(r io.Reader) (core.Producer, error) {
 	}
 
 	// support MJPEG with trash on start
-	// https://github.com/AlexxIT/go2rtc/issues/747
+	// https://github.com/wltechblog/go2rtc-smaller/issues/747
 	if b, err = rd.Peek(4096); err != nil {
 		return nil, err
 	}

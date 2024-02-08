@@ -7,8 +7,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/flv/amf"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/flv/amf"
 )
 
 func NewServer(conn net.Conn) (*Conn, error) {

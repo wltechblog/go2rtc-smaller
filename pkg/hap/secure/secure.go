@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AlexxIT/go2rtc/pkg/hap/chacha20poly1305"
-	"github.com/AlexxIT/go2rtc/pkg/hap/hkdf"
+	"github.com/wltechblog/go2rtc-smaller/pkg/hap/chacha20poly1305"
+	"github.com/wltechblog/go2rtc-smaller/pkg/hap/hkdf"
 )
 
 type Conn struct {

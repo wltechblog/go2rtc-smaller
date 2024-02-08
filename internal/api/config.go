@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/AlexxIT/go2rtc/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"gopkg.in/yaml.v3"
 )
 

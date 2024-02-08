@@ -1,17 +1,17 @@
 package main
 
 import (
-	"github.com/AlexxIT/go2rtc/internal/api"
-	"github.com/AlexxIT/go2rtc/internal/api/ws"
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/exec"
-	"github.com/AlexxIT/go2rtc/internal/hls"
-	"github.com/AlexxIT/go2rtc/internal/mjpeg"
-	"github.com/AlexxIT/go2rtc/internal/mp4"
-	"github.com/AlexxIT/go2rtc/internal/rtsp"
-	"github.com/AlexxIT/go2rtc/internal/streams"
-	"github.com/AlexxIT/go2rtc/internal/webrtc"
-	"github.com/AlexxIT/go2rtc/pkg/shell"
+	"github.com/wltechblog/go2rtc-smaller/internal/api"
+	"github.com/wltechblog/go2rtc-smaller/internal/api/ws"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/exec"
+	"github.com/wltechblog/go2rtc-smaller/internal/hls"
+	"github.com/wltechblog/go2rtc-smaller/internal/mjpeg"
+	"github.com/wltechblog/go2rtc-smaller/internal/mp4"
+	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
+	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/internal/webrtc"
+	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
 )
 
 func main() {

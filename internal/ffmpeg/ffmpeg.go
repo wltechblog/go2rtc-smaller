@@ -4,12 +4,12 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/AlexxIT/go2rtc/internal/app"
-	"github.com/AlexxIT/go2rtc/internal/ffmpeg/device"
-	"github.com/AlexxIT/go2rtc/internal/ffmpeg/hardware"
-	"github.com/AlexxIT/go2rtc/internal/rtsp"
-	"github.com/AlexxIT/go2rtc/internal/streams"
-	"github.com/AlexxIT/go2rtc/pkg/ffmpeg"
+	"github.com/wltechblog/go2rtc-smaller/internal/app"
+	"github.com/wltechblog/go2rtc-smaller/internal/ffmpeg/device"
+	"github.com/wltechblog/go2rtc-smaller/internal/ffmpeg/hardware"
+	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
+	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/pkg/ffmpeg"
 )
 
 func Init() {
@@ -95,7 +95,7 @@ var defaults = map[string]string{
 	"h265/v4l2m2m": "-c:v hevc_v4l2m2m -g 50 -bf 0",
 
 	// hardware Rockchip
-	// important to use custom ffmpeg https://github.com/AlexxIT/go2rtc/issues/768
+	// important to use custom ffmpeg https://github.com/wltechblog/go2rtc-smaller/issues/768
 	// hevc - doesn't have a profile setting
 	"h264/rkmpp": "-c:v h264_rkmpp_encoder -g 50 -bf 0 -profile:v high -level:v 4.1",
 	"h265/rkmpp": "-c:v hevc_rkmpp_encoder -g 50 -bf 0 -level:v 5.1",
@@ -210,7 +210,7 @@ func parseArgs(s string) *ffmpeg.Args {
 	if query != nil {
 		// 1. Process raw params for FFmpeg
 		for _, raw := range query["raw"] {
-			// support templates https://github.com/AlexxIT/go2rtc/issues/487
+			// support templates https://github.com/wltechblog/go2rtc-smaller/issues/487
 			raw = configTemplate(raw)
 			args.AddCodec(raw)
 		}
@@ -248,7 +248,7 @@ func parseArgs(s string) *ffmpeg.Args {
 		}
 
 		for _, drawtext := range query["drawtext"] {
-			// support templates https://github.com/AlexxIT/go2rtc/issues/487
+			// support templates https://github.com/wltechblog/go2rtc-smaller/issues/487
 			drawtext = configTemplate(drawtext)
 
 			// support default timestamp format

@@ -2,8 +2,8 @@ package isapi
 
 import (
 	"errors"
-	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/tcp"
+	"github.com/wltechblog/go2rtc-smaller/pkg/core"
+	"github.com/wltechblog/go2rtc-smaller/pkg/tcp"
 	"io"
 	"net"
 	"net/http"
