@@ -4,14 +4,14 @@ import (
 	"errors"
 	"strings"
 
+	pion "github.com/pion/webrtc/v3"
+	"github.com/rs/zerolog"
 	"github.com/wltechblog/go2rtc-smaller/internal/api"
 	"github.com/wltechblog/go2rtc-smaller/internal/api/ws"
 	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/wltechblog/go2rtc-smaller/internal/streams"
 	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 	"github.com/wltechblog/go2rtc-smaller/pkg/webrtc"
-	pion "github.com/pion/webrtc/v3"
-	"github.com/rs/zerolog"
 )
 
 func Init() {
@@ -81,9 +81,6 @@ func Init() {
 
 	// sync WebRTC server (two API versions)
 	api.HandleFunc("api/webrtc", syncHandler)
-
-	// WebRTC client
-	streams.HandleFunc("webrtc", streamsHandler)
 }
 
 var log zerolog.Logger

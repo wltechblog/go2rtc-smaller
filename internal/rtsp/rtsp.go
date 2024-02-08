@@ -4,14 +4,13 @@ import (
 	"io"
 	"net"
 	"net/url"
-	"strings"
 
+	"github.com/rs/zerolog"
 	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/wltechblog/go2rtc-smaller/internal/streams"
 	"github.com/wltechblog/go2rtc-smaller/pkg/core"
 	"github.com/wltechblog/go2rtc-smaller/pkg/rtsp"
 	"github.com/wltechblog/go2rtc-smaller/pkg/tcp"
-	"github.com/rs/zerolog"
 )
 
 func Init() {
@@ -33,11 +32,6 @@ func Init() {
 	app.Info["rtsp"] = conf.Mod
 
 	log = app.GetLogger("rtsp")
-
-	// RTSP client support
-	streams.HandleFunc("rtsp", rtspHandler)
-	streams.HandleFunc("rtsps", rtspHandler)
-	streams.HandleFunc("rtspx", rtspHandler)
 
 	// RTSP server support
 	address := conf.Mod.Listen
@@ -91,56 +85,6 @@ var log zerolog.Logger
 var handlers []Handler
 var defaultMedias []*core.Media
 
-func rtspHandler(rawURL string) (core.Producer, error) {
-	rawURL, rawQuery, _ := strings.Cut(rawURL, "#")
-
-	conn := rtsp.NewClient(rawURL)
-	conn.Backchannel = true
-	conn.UserAgent = app.UserAgent
-
-	if rawQuery != "" {
-		query := streams.ParseQuery(rawQuery)
-		conn.Backchannel = query.Get("backchannel") == "1"
-		conn.Media = query.Get("media")
-		conn.Timeout = core.Atoi(query.Get("timeout"))
-		conn.Transport = query.Get("transport")
-	}
-
-	if log.Trace().Enabled() {
-		conn.Listen(func(msg any) {
-			switch msg := msg.(type) {
-			case *tcp.Request:
-				log.Trace().Msgf("[rtsp] client request:\n%s", msg)
-			case *tcp.Response:
-				log.Trace().Msgf("[rtsp] client response:\n%s", msg)
-			case string:
-				log.Trace().Msgf("[rtsp] client msg: %s", msg)
-			}
-		})
-	}
-
-	if err := conn.Dial(); err != nil {
-		return nil, err
-	}
-
-	if err := conn.Describe(); err != nil {
-		if !conn.Backchannel {
-			return nil, err
-		}
-		log.Trace().Msgf("[rtsp] describe (backchannel=%t) err: %v", conn.Backchannel, err)
-
-		// second try without backchannel, we need to reconnect
-		conn.Backchannel = false
-		if err = conn.Dial(); err != nil {
-			return nil, err
-		}
-		if err = conn.Describe(); err != nil {
-			return nil, err
-		}
-	}
-
-	return conn, nil
-}
 
 func tcpHandler(conn *rtsp.Conn) {
 	var name string
