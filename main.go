@@ -6,6 +6,7 @@ import (
 	"github.com/wltechblog/go2rtc-smaller/internal/app"
 	"github.com/wltechblog/go2rtc-smaller/internal/exec"
 	"github.com/wltechblog/go2rtc-smaller/internal/hls"
+	"github.com/wltechblog/go2rtc-smaller/internal/http"
 	"github.com/wltechblog/go2rtc-smaller/internal/mjpeg"
 	"github.com/wltechblog/go2rtc-smaller/internal/mp4"
 	"github.com/wltechblog/go2rtc-smaller/internal/onvif"
@@ -49,7 +50,7 @@ func main() {
 //	ffmpeg.Init()   // ffmpeg source
 //	echo.Init()     // echo source
 //	ivideon.Init()  // ivideon source
-//	http.Init()     // http/tcp source
+	http.Init()     // http/tcp source
 //	dvrip.Init()    // dvrip source
 //	tapo.Init()     // tapo source
 //	isapi.Init()    // isapi source
