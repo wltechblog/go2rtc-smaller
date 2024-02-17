@@ -6,3 +6,4 @@ go2rtc.json
 go2rtc-smaller
 0_test.go
 files.txt
+config.yaml

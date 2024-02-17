@@ -41,7 +41,7 @@ func Init() {
 func pipeHandle(url string) (core.Producer, error) {
 
 	args := shell.QuoteSplit(url[5:]) // remove `pipe:`
-	filename := args[1]
+	filename := args[0]
 
 	return handlePipe(url, filename)
 }
@@ -50,7 +50,7 @@ func handlePipe(url string, filename string) (core.Producer, error) {
 
 	r, err := os.Open(filename)
 	if err != nil {
-		log.Printf("Error opening file: %v", err)
+		log.Printf("Error opening file %s: %v", filename, err)
 		return nil, err
 	}
 
