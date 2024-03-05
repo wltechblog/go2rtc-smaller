@@ -13,6 +13,7 @@ import (
 	"github.com/wltechblog/go2rtc-smaller/internal/pipe"
 	"github.com/wltechblog/go2rtc-smaller/internal/rtsp"
 	"github.com/wltechblog/go2rtc-smaller/internal/streams"
+	"github.com/wltechblog/go2rtc-smaller/internal/unix"
 	"github.com/wltechblog/go2rtc-smaller/internal/webrtc"
 	"github.com/wltechblog/go2rtc-smaller/pkg/shell"
 )
@@ -49,6 +50,7 @@ func main() {
 	//	rtmp.Init()     // rtmp source
 	exec.Init() // exec source
 	pipe.Init()
+	unix.Init()
 	//	ffmpeg.Init()   // ffmpeg source
 	//	echo.Init()     // echo source
 	//	ivideon.Init()  // ivideon source
