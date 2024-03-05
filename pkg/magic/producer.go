@@ -6,14 +6,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/wltechblog/go2rtc-smaller/pkg/aac"
 	"github.com/wltechblog/go2rtc-smaller/pkg/core"
-	"github.com/wltechblog/go2rtc-smaller/pkg/flv"
 	"github.com/wltechblog/go2rtc-smaller/pkg/h264/annexb"
 	"github.com/wltechblog/go2rtc-smaller/pkg/magic/bitstream"
 	"github.com/wltechblog/go2rtc-smaller/pkg/magic/mjpeg"
-	"github.com/wltechblog/go2rtc-smaller/pkg/mpegts"
-	"github.com/wltechblog/go2rtc-smaller/pkg/multipart"
 )
 
 func Open(r io.Reader) (core.Producer, error) {
@@ -30,7 +26,7 @@ func Open(r io.Reader) (core.Producer, error) {
 
 	case bytes.HasPrefix(b, []byte{0xFF, 0xD8}):
 		return mjpeg.Open(rd)
-
+/*
 	case bytes.HasPrefix(b, []byte(flv.Signature)):
 		return flv.Open(rd)
 
@@ -42,6 +38,7 @@ func Open(r io.Reader) (core.Producer, error) {
 
 	case b[0] == mpegts.SyncByte:
 		return mpegts.Open(rd)
+*/
 	}
 
 	// support MJPEG with trash on start
